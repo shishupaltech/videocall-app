@@ -35,7 +35,7 @@ io.on('connection', (socket) => {
 
 // Handles any requests that don't match the above routes
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'client', 'build', ''));
 });
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
