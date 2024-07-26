@@ -9,6 +9,7 @@ const App = () => {
 
   useEffect(() => {
     if (id) {
+      console.log(id, 'djsjjs');
       setCallId(id);
       joinCall(id); // Join call with the ID
     }
