@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js",
+    "start": "node index.js",
     "client": "npm run start --prefix client",
-    "client-install": "npm install --prefix client"
+    "client-install": "npm install --prefix client",
+    "build": "npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
