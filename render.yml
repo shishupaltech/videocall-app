@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: videocallapp-backend
+    env: node
+    buildCommand: "echo 'Building project...' && npm run build"
+    startCommand: "npm start"
+    plan: free
