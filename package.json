@@ -2,9 +2,9 @@
   "name": "videocallapp",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "client": "npm run start --prefix client",
     "client-install": "npm install --prefix client"
   },
