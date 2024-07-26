@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "client-install": "cd client && npm install",
-    "client-build": "cd client && npm run build",
-    "build": "npm run client-install && npm run client-build",
-    "dev": "concurrently \"npm run start\" \"cd client && npm start\""
+  "client-install": "cd client && npm install",
+  "client-build": "cd client && npm run build",
+  "build": "npm run client-install && npm run client-build"
   },
   "keywords": [],
   "author": "",

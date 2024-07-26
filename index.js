@@ -11,8 +11,8 @@ const io = socketIo(server);
 const PORT = process.env.PORT || 5000;
 
 // Serve the static files from the React app
-console.log(__dirname);
-app.use(express.static(path.join(__dirname, 'client', 'build')));
+// console.log(__dirname);
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 io.on('connection', (socket) => {
     console.log('New client connected');
@@ -36,7 +36,7 @@ io.on('connection', (socket) => {
 
 // Handles any requests that don't match the above routes
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
