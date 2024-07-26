@@ -1,0 +1,27 @@
+{
+  "name": "videocallapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "client-install": "cd client && npm install",
+    "client-build": "cd client && npm run build",
+    "build": "npm run client:install && npm run client:build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.12",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "nodemon": "^3.1.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "simple-peer": "^9.11.1",
+    "socket.io": "^4.7.5",
+    "uuid": "^10.0.0"
+  }
+}
