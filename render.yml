@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: videocallapp
+    name: videocallapp-backend
     env: node
-    buildCommand: "npm run build"
-    startCommand: "node index.js"
+    buildCommand: "cd client && npm install && npm run build"
+    startCommand: "npm start"
     plan: free
