@@ -5,4 +5,3 @@ services:
     buildCommand: "npm run build"
     startCommand: "node index.js"
     plan: free
-    branch: main

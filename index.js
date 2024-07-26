@@ -11,7 +11,7 @@ const io = socketIo(server);
 const PORT = process.env.PORT || 5000;
 
 // Serve the static files from the React app
-// console.log(__dirname);
+
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 io.on('connection', (socket) => {
